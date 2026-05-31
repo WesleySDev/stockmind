@@ -1,8 +1,11 @@
 package models
 
-type movement struct {
-	ID       uint   `json:"id"`
-	Product  uint   `json:"product_id"`
-	Type     string `json:"type"` // entrada ou saida
-	Quantity int    `json:"quantity"`
+import "time"
+
+type Movement struct {
+	ID        uint      `gorm:"primaryKey" json:"id"`
+	ProductID uint      `json:"product_id"`
+	Type      string    `json:"type"`
+	Quantity  int       `json:"quantity"`
+	CreatedAt time.Time `json:"created_at"`
 }
