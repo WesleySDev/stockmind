@@ -21,7 +21,7 @@ func Connect() {
 
 	DB = db
 
-	DB.AutoMigrate(
+	DB.AutoMigrate( // avisando ao banco"Banco, crie uma tabela baseada nesta struct."
 		&models.User{},
 		&models.Product{},
 		&models.Movement{},
