@@ -2,7 +2,6 @@ package main
 
 import (
 	"stockmind/database"
-	"stonkmind/database"
 
 	"github.com/gofiber/fiber/v2"
 )
